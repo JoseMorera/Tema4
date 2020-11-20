@@ -1,2 +1,26 @@
-# Tema4
-Laboratorio 4 IE0405 - Modelos Probabilísticos de Señales y Sistemas
+---
+### Universidad de Costa Rica
+#### IE0405 - Modelos Probabilísticos de Señales y Sistemas
+
+Segundo semestre del 2020  
+Laboratorio 4
+
+---
+
+* Estudiante: **José Alberto Morera Guzmán**
+* Carné: **B85431**
+* Grupo: **1**
+---
+Un proceso estocástico está definido por: 
+
+![Tau](https://latex.codecogs.com/gif.latex?W%28t%29%3DXcos%28%5Comega_0t%29&plus;Ysen%28%5Comega_0t%29)  
+donde X y Y son variables aleatorias y W0 una constante real. W(t) es estacionario en sentido amplio cuando
+X y Y son no correlacionadas, con valores medios iguales a cero y varianzas iguales. Encuentre
+la función de autocorrelacion de W(t) y pruebe que es igual a:  
+![Tau](https://latex.codecogs.com/gif.latex?R_%7BWW%7D%28%5Ctau%29%3D%5Csigma%5E%7B2%7Dcos%28%5Comega_0t%29)  
+
+
+*Documente la solución*  
+Para la solución de este problema con Python, primeramente se definen las variables aleatorias X y Y Gaussianas con media 0 y varianza 10. Al valor de omega sub cero se le asigna el valor de pi. Se asigna un valor de 100 realizaciones y luego se obtienen el promedio de las N realizaciones en cada instante (cada punto en t) y se grafica. En la misma gráfica se muestra también el valor esperado teórico, el cual toma un valor de cero. En la gráfica obtenida se puede comprobar el valor teórico.  
+Para obtener la autocorreación se sigue el mismo procedimiento utilizado en L4 base pero cambiando los datos correspondientes al problema 1, se grafican las curvas de la autocorrelación obtenidas con el código de Python y en la misma gráfica el valor teórico. Se concluye que el código nos brinda un resultado aproximado a la teoría.
+
